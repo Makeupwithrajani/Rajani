@@ -1,73 +1,207 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio | Makeup & Hair With Rajani</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Makeup & Hair With Rajani | Kathmandu</title>
+<meta name="description" content="Portfolio of Rajani Shrestha — Professional Makeup & Hair Artist in Kathmandu, Nepal. Bridal, Party, Photoshoot, Hair Styling looks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+<body>
+<div class="grain"></div>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">MAKEUP WITH RAJANI</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+    </ul>
+  </div>
+</nav>
 
-<body data-page="portfolio">
-<!-- ================= HEADER ================= -->
-<header class="header">
+<section class="page-hero">
+  <div class="page-hero-content">
+    <p class="label">My Work</p>
+    <h1>Portfolio</h1>
+    <p>Makeup & hair looks created for brides, parties, photoshoots & more — Kathmandu, Nepal</p>
+  </div>
+</section>
+
+<section class="portfolio-section section">
   <div class="container">
-    <nav class="nav" data-nav>
-      <a class="brand" href="index.html">
-        <div class="logo"></div>
-        <div>
-          <span>Makeup & Hair With Rajani</span>
-          <small>Bridal • Party • Photoshoot</small>
-        </div>
-      </a>
 
-      <button class="hamburger" data-hamburger>☰ Menu</button>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Looks</button>
+      <button class="filter-btn" data-filter="bridal">Bridal</button>
+      <button class="filter-btn" data-filter="engagement">Engagement</button>
+      <button class="filter-btn" data-filter="party">Party Glam</button>
+      <button class="filter-btn" data-filter="photoshoot">Photoshoot</button>
+      <button class="filter-btn" data-filter="hair">Hair Styling</button>
+      <button class="filter-btn" data-filter="natural">Natural Look</button>
+    </div>
 
-      <div class="navlinks" data-navlinks>
-        <a href="index.html" data-page="home">Home</a>
-        <a href="about.html" data-page="about">About</a>
-        <a href="portfolio.html" data-page="portfolio">Portfolio</a>
-        <a href="contact.html" data-page="contact">Contact</a>
+    <div class="portfolio-masonry" id="portfolioGrid">
+
+      <div class="port-item tall" data-cat="bridal">
+        <div class="port-img"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/bridal-makeup-soft-pink-glam-rajani.jpg.png" alt="Soft Pink Bridal Glam by Rajani"></div>
+        <div class="port-overlay"><span class="port-cat">Bridal</span><h4>Soft Pink Bridal Glam</h4></div>
       </div>
-    </nav>
+
+      <div class="port-item" data-cat="party">
+        <div class="port-img"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/Party.jpeg" alt="Party Glam by Rajani"></div>
+        <div class="port-overlay"><span class="port-cat">Party Glam</span><h4>Party Glam</h4></div>
+      </div>
+
+      <div class="port-item" data-cat="natural">
+        <div class="port-img"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/WhatsApp%20Image%202024-12-20%20at%2010.36.40.jpeg" alt="Natural Look by Rajani"></div>
+        <div class="port-overlay"><span class="port-cat">Natural Look</span><h4>Natural Glow</h4></div>
+      </div>
+
+      <div class="port-item" data-cat="photoshoot">
+        <div class="port-img"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/photoshoot.jpeg" alt="Photoshoot Makeup by Rajani"></div>
+        <div class="port-overlay"><span class="port-cat">Photoshoot</span><h4>Photoshoot Makeup</h4></div>
+      </div>
+
+      <div class="port-item tall" data-cat="engagement">
+        <div class="port-img"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/Cover.PNG" alt="Engagement Look by Rajani"></div>
+        <div class="port-overlay"><span class="port-cat">Engagement</span><h4>Engagement Look</h4></div>
+      </div>
+
+      <div class="port-item" data-cat="hair">
+        <div class="port-img"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/hairtstyling.JPG" alt="Hair Styling by Rajani"></div>
+        <div class="port-overlay"><span class="port-cat">Hair Styling</span><h4>Hair Styling</h4></div>
+      </div>
+
+      <div class="port-item" data-cat="bridal">
+        <div class="port-img"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/bridal-makeup-soft-pink-glam-rajani.jpg.png" alt="Bridal Makeup by Rajani"></div>
+        <div class="port-overlay"><span class="port-cat">Bridal</span><h4>Bridal Look</h4></div>
+      </div>
+
+      <div class="port-item tall" data-cat="hair">
+        <div class="port-img"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/hairtstyling.JPG" alt="Bridal Hair by Rajani"></div>
+        <div class="port-overlay"><span class="port-cat">Hair Styling</span><h4>Bridal Hair</h4></div>
+      </div>
+
+      <div class="port-item" data-cat="engagement">
+        <div class="port-img"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/Cover.PNG" alt="Engagement Glam by Rajani"></div>
+        <div class="port-overlay"><span class="port-cat">Engagement</span><h4>Engagement Glam</h4></div>
+      </div>
+
+      <div class="port-item" data-cat="photoshoot">
+        <div class="port-img"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/photoshoot.jpeg" alt="HD Finish Photoshoot by Rajani"></div>
+        <div class="port-overlay"><span class="port-cat">Photoshoot</span><h4>HD Finish Look</h4></div>
+      </div>
+
+      <div class="port-item tall" data-cat="party">
+        <div class="port-img"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/Party.jpeg" alt="Evening Glam by Rajani"></div>
+        <div class="port-overlay"><span class="port-cat">Party Glam</span><h4>Evening Glam</h4></div>
+      </div>
+
+      <div class="port-item" data-cat="natural">
+        <div class="port-img"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/WhatsApp%20Image%202024-12-20%20at%2010.36.40.jpeg" alt="Dewy Natural Look by Rajani"></div>
+        <div class="port-overlay"><span class="port-cat">Natural Look</span><h4>Dewy Skin</h4></div>
+      </div>
+
+    </div>
+
+    <!-- INSTAGRAM CTA -->
+    <div class="insta-cta">
+      <p class="label">See More Work</p>
+      <h3>Follow on Instagram for Latest Looks & Reels</h3>
+      <p style="color:var(--text-muted);font-size:.85rem;margin-bottom:1.5rem;">New transformations, behind-the-scenes, and tips posted regularly</p>
+      <a href="https://www.instagram.com/makeupandhairwithrajani/" target="_blank" class="btn-primary">@makeupandhairwithrajani</a>
+    </div>
+
   </div>
-</header>
+</section>
 
-<main class="section">
+<!-- CATEGORIES INFO -->
+<section class="section dark-section">
   <div class="container">
-    <h2>Portfolio</h2>
-    <p>Makeup & hair looks created for brides, parties, and photoshoots.</p>
-
-<div class="gallery">
-  <!-- Bridal (NEW IMAGE) -->
-  <div class="card work">
-    <img 
-      src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/bridal-makeup-soft-pink-glam-rajani.jpg.png"
-      alt="Soft pink bridal makeup with natural glam by Makeup & Hair With Rajani">
-    <p><b>Soft Pink Bridal Glam</b></p>
-  </div>
-
-  <div class="card work"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/Party.jpeg"><p>Party Glam</p></div>
-  <div class="card work"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/WhatsApp%20Image%202024-12-20%20at%2010.36.40.jpeg"><p>Natural Look</p></div>
-  <div class="card work"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/photoshoot.jpeg"><p>Photoshoot Makeup</p></div>
-  <div class="card work"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/Cover.PNG"><p>Engagement Look</p></div>
-  <div class="card work"><img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/hairtstyling.JPG"><p>Hair Styling</p></div>
-</div>
-
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footerGrid">
-      <div>© 2026 Makeup & Hair With Rajani</div>
-      <div>
-        <a href="https://www.instagram.com/makeupandhairwithrajani/" target="_blank">Instagram</a> •
-        <a href="https://www.tiktok.com/@stharazni" target="_blank">TikTok</a>
+    <div class="section-header">
+      <p class="label">Specialties</p>
+      <h2 style="color:var(--white);">Every Look, Perfectly Crafted</h2>
+    </div>
+    <div class="services-grid">
+      <div class="srv-card">
+        <div class="srv-icon">💍</div>
+        <h3>Bridal</h3>
+        <p>Traditional, contemporary, or fusion — every bride's look is uniquely designed for her special day</p>
+      </div>
+      <div class="srv-card">
+        <div class="srv-icon">💫</div>
+        <h3>Engagement</h3>
+        <p>Fresh, glowing looks that photograph beautifully and set the perfect tone for celebrations</p>
+      </div>
+      <div class="srv-card">
+        <div class="srv-icon">✨</div>
+        <h3>Party Glam</h3>
+        <p>Bold smoky eyes, defined lips, or glowing skin — made to turn heads at any gathering</p>
+      </div>
+      <div class="srv-card">
+        <div class="srv-icon">📸</div>
+        <h3>Photoshoot</h3>
+        <p>HD-finish, camera-optimized makeup for professional photoshoots and brand campaigns</p>
+      </div>
+      <div class="srv-card">
+        <div class="srv-icon">✂️</div>
+        <h3>Hair Styling</h3>
+        <p>Elegant updos, romantic waves, intricate braids — professional hair for every occasion</p>
+      </div>
+      <div class="srv-card">
+        <div class="srv-icon">🌿</div>
+        <h3>Natural Look</h3>
+        <p>Skin-first, no-makeup makeup — enhancing your best features with a light, fresh touch</p>
       </div>
     </div>
   </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-bg">
+    <img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/Cover.PNG" alt="Book Rajani">
+  </div>
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <p class="label">Love What You See?</p>
+    <h2 style="color:var(--white);">Let's Create Your<br><em>Perfect Look</em></h2>
+    <a href="https://wa.me/9779840141090?text=Hi%20Rajani%2C%20I%20want%20to%20book%20makeup%20%2F%20hair.%20My%20date%20is%20____%20and%20location%20is%20____." target="_blank" class="btn-gold">📱 Book on WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo">MAKEUP WITH RAJANI</span>
+      <p>Bridal · Party · Photoshoot · Hair<br>Kathmandu, Nepal</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/makeupandhairwithrajani/" target="_blank">IG</a>
+        <a href="https://www.tiktok.com/@stharazni" target="_blank">TK</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h4>Navigation</h4>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Get In Touch</h4>
+      <p>Kathmandu, Nepal</p>
+      <p><a href="https://wa.me/9779840141090" target="_blank" style="color:var(--gold);">+977 9840141090</a></p>
+      <p><a href="https://www.instagram.com/makeupandhairwithrajani/" target="_blank" style="color:var(--gold-dark);">@makeupandhairwithrajani</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Makeup & Hair With Rajani · Kathmandu, Nepal</p></div>
 </footer>
+<script src="main.js"></script>
 </body>
 </html>
-
-
-

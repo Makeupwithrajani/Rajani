@@ -1,135 +1,464 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Makeup & Hair With Rajani | Kathmandu, Nepal</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Makeup & Hair With Rajani | Kathmandu, Nepal</title>
+<meta name="description" content="Professional Makeup & Hair Artist in Kathmandu, Nepal. Specializing in Bridal, Party Glam, Photoshoot, and Hair Styling. Book Rajani Shrestha today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+<body>
+<div class="grain"></div>
 
-<body data-page="home">
-
-<!-- ================= HEADER ================= -->
-<header class="header">
-  <div class="container">
-    <nav class="nav" data-nav>
-      <a class="brand" href="index.html">
-        <div class="logo"></div>
-        <div>
-          <span>Makeup & Hair With Rajani</span>
-          <small>Bridal • Party • Photoshoot</small>
-        </div>
-      </a>
-
-      <button class="hamburger" data-hamburger>☰ Menu</button>
-
-      <div class="navlinks" data-navlinks>
-        <a href="index.html" data-page="home">Home</a>
-        <a href="about.html" data-page="about">About</a>
-        <a href="portfolio.html" data-page="portfolio">Portfolio</a>
-        <a href="contact.html" data-page="contact">Contact</a>
-      </div>
-    </nav>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">MAKEUP WITH RAJANI</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+    </ul>
   </div>
-</header>
+</nav>
 
-<!-- ================= MAIN ================= -->
-<main>
+<!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <div class="heroGrid">
+  <div class="hero-bg">
+    <img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/Cover.PNG" alt="Makeup & Hair With Rajani — Kathmandu Nepal">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-sub reveal">Kathmandu, Nepal · By Appointment</p>
+    <h1 class="hero-title reveal d1">Makeup &<br><em>Hair With Rajani</em></h1>
+    <p class="hero-desc reveal d2">Bridal · Party · Photoshoot · Hair Styling<br>Personalized beauty that makes you feel like yourself — only better.</p>
+    <div class="hero-btns reveal d3">
+      <a href="portfolio.html" class="btn-primary">View Portfolio</a>
+      <a href="https://wa.me/9779840141090?text=Hi%20Rajani%2C%20I%20want%20to%20book%20makeup%20%2F%20hair.%20My%20date%20is%20____%20and%20location%20is%20____." target="_blank" class="btn-ghost">📱 Book on WhatsApp</a>
+    </div>
+    <div class="hero-pills reveal d3">
+      <span class="hero-pill">Bridal Specialist</span>
+      <span class="hero-pill">Hair & Makeup</span>
+      <span class="hero-pill">HD Finish</span>
+      <span class="hero-pill">On-Location</span>
+      <span class="hero-pill">5+ Years Experience</span>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
 
-      <!-- HERO TEXT -->
-      <div class="card heroText">
-        <div class="kicker">
-          <span class="dot"></span> Rajani • Professional Makeup Artist
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Bridal Makeup</span><span class="dot">✦</span>
+    <span>Party Glam</span><span class="dot">✦</span>
+    <span>Hair Styling</span><span class="dot">✦</span>
+    <span>Photoshoot Makeup</span><span class="dot">✦</span>
+    <span>Engagement</span><span class="dot">✦</span>
+    <span>Natural Look</span><span class="dot">✦</span>
+    <span>HD Finish</span><span class="dot">✦</span>
+    <span>On-Location</span><span class="dot">✦</span>
+    <span>Bridal Makeup</span><span class="dot">✦</span>
+    <span>Party Glam</span><span class="dot">✦</span>
+    <span>Hair Styling</span><span class="dot">✦</span>
+    <span>Photoshoot Makeup</span><span class="dot">✦</span>
+    <span>Engagement</span><span class="dot">✦</span>
+    <span>Natural Look</span><span class="dot">✦</span>
+    <span>HD Finish</span><span class="dot">✦</span>
+    <span>On-Location</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- USP STRIP -->
+<div class="container" style="padding-top:4rem;padding-bottom:0;">
+  <div class="usp-strip">
+    <div class="usp-item">
+      <div class="usp-icon">💍</div>
+      <h4>Bridal Specialist</h4>
+      <p>Every bride deserves a flawless, camera-perfect look tailored to her vision and skin</p>
+    </div>
+    <div class="usp-item">
+      <div class="usp-icon">✦</div>
+      <h4>Hygienic & Professional</h4>
+      <p>Only clean, professional-grade tools and quality products used on every client</p>
+    </div>
+    <div class="usp-item" style="border-right:none;">
+      <div class="usp-icon">📍</div>
+      <h4>On-Location Available</h4>
+      <p>I come to you — at your home, hotel, or venue across Kathmandu Valley</p>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO / ABOUT PREVIEW -->
+<section class="intro section">
+  <div class="container split">
+    <div class="intro-img-wrap">
+      <div class="img-fixed">
+        <img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/rajani-hero.jpg.jpeg" alt="Rajani Shrestha — Makeup & Hair Artist Kathmandu">
+      </div>
+      <div class="intro-badge">
+        <span class="badge-num">5+</span>
+        <span class="badge-text">Years of<br>Experience</span>
+      </div>
+    </div>
+    <div class="intro-text">
+      <p class="label">The Artist</p>
+      <h2>Hi, I'm<br><em>Rajani Shrestha</em></h2>
+      <p>I'm a freelance Makeup & Hair Stylist proudly based in Kathmandu, Nepal. Makeup is not just my career — it's my passion and a way for me to express creativity while bringing joy to others.</p>
+      <p>Whether it's a bride on her special day, a brand project, or a private client, I love collaborating to create looks that leave us both feeling proud. My goal is to make everyone in my chair feel valued, cared for, and confident.</p>
+      <p>I specialize in enhancing natural beauty with a creative touch, offering personalized services for every occasion — from intimate bridal looks to bold editorial glam.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0;">
+        <div style="border-left:2px solid var(--gold);padding-left:.9rem;">
+          <strong style="display:block;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.2rem;">Location</strong>
+          <span style="font-size:.85rem;color:var(--text-muted);">Kathmandu, Nepal</span>
         </div>
-
-        <h1 class="h1">MakeUpWith Rajani</h1>
-
-        <p class="lead">
-          Specializing in enhancing natural beauty with a creative touch, Rajani
-          offers personalized makeup services for every occasion, from bridal to
-          editorial looks. With a keen eye for detail and a passion for beauty,
-          Rajani creates flawless, customized styles that highlight each client's
-          unique features.
-        </p>
-
-        <h3 style="margin:16px 0 6px;">Rajani – Professional Makeup Artist</h3>
-
-        <p class="lead">
-          Welcome! I’m Rajani Shrestha, a freelance makeup artist proudly based in
-          Kathmandu, Nepal. Makeup is not just my career—it’s my passion and a way
-          for me to express creativity while bringing joy to others.
-        </p>
-
-        <p class="lead">
-          Whether it’s a bride on her special day, a brand project, or a private
-          client, I love collaborating to create looks that leave us both feeling
-          proud. My goal is to make everyone in my chair feel valued, cared for,
-          and confident.
-        </p>
-
-        <p class="lead">
-          I can’t wait to hear from you and hopefully work together soon!
-        </p>
-
-        <div class="heroActions">
-          <a class="btn primary" href="contact.html">Book Appointment</a>
-          <a class="btn" href="portfolio.html">View Portfolio</a>
+        <div style="border-left:2px solid var(--gold);padding-left:.9rem;">
+          <strong style="display:block;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.2rem;">Bookings</strong>
+          <span style="font-size:.85rem;color:var(--text-muted);">By Appointment</span>
         </div>
-
-        <div class="meta">
-          <span class="pill"><b>Services:</b> Makeup & Hair</span>
-          <span class="pill"><b>Location:</b> Kathmandu, Nepal</span>
-          <span class="pill"><b>Bookings:</b> By appointment</span>
+        <div style="border-left:2px solid var(--gold);padding-left:.9rem;">
+          <strong style="display:block;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.2rem;">Services</strong>
+          <span style="font-size:.85rem;color:var(--text-muted);">Makeup & Hair</span>
+        </div>
+        <div style="border-left:2px solid var(--gold);padding-left:.9rem;">
+          <strong style="display:block;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.2rem;">Style</strong>
+          <span style="font-size:.85rem;color:var(--text-muted);">Timeless & Creative</span>
         </div>
       </div>
-
-      <!-- HERO IMAGE -->
-      <div class="card heroImage">
-        <img 
-          src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/Cover.PNG" 
-          alt="Makeup and Hair by Rajani"
-        >
-        <div class="overlay"></div>
-        <div class="heroBadge">
-          <div class="badge">Bridal Specialist</div>
-          <div class="badge">Hair & Makeup</div>
-          <div class="badge">HD Finish</div>
-        </div>
-      </div>
-
+      <a href="about.html" class="btn-line">Read Full Story →</a>
     </div>
   </div>
 </section>
-</main>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
+<!-- STATS -->
+<section style="background:var(--dark);padding:0;">
   <div class="container">
-    <div class="footerGrid">
-      <div>© 2026 Makeup & Hair With Rajani</div>
-      <div>
-        <a href="contact.html">Contact</a> •
-        <a href="portfolio.html">Portfolio</a> •
-        <a 
-          href="https://www.instagram.com/makeupandhairwithrajani/" 
-          target="_blank"
-        >
-          Instagram
-        </a> •
-        <a 
-          href="https://www.tiktok.com/@stharazni" 
-          target="_blank"
-        >
-          TikTok
-        </a>
+    <div class="stats-grid">
+      <div class="stat-item"><span class="stat-num">5+</span><span class="stat-label">Years Experience</span></div>
+      <div class="stat-item"><span class="stat-num">✦</span><span class="stat-label">Bridal Specialist</span></div>
+      <div class="stat-item"><span class="stat-num">100%</span><span class="stat-label">Hygienic Products</span></div>
+      <div class="stat-item"><span class="stat-num">✦</span><span class="stat-label">On-Location Service</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED WORK -->
+<section class="featured section">
+  <div class="container">
+    <div class="section-header">
+      <p class="label">Featured Work</p>
+      <h2>Selected Looks</h2>
+      <p style="color:var(--text-muted);max-width:500px;margin:.8rem auto 0;font-size:.9rem;">From bridal to party to photoshoot — every look crafted with passion and precision</p>
+    </div>
+    <div class="featured-grid">
+      <div class="feat-card large">
+        <div class="img-frame">
+          <img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/bridal-makeup-soft-pink-glam-rajani.jpg.png" alt="Soft Pink Bridal Glam by Rajani">
+        </div>
+        <div class="feat-info"><span class="feat-cat">Bridal</span><h3>Soft Pink Bridal Glam</h3></div>
+      </div>
+      <div class="feat-card">
+        <div class="img-frame">
+          <img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/Party.jpeg" alt="Party Glam by Rajani">
+        </div>
+        <div class="feat-info"><span class="feat-cat">Party</span><h3>Party Glam</h3></div>
+      </div>
+      <div class="feat-card">
+        <div class="img-frame">
+          <img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/photoshoot.jpeg" alt="Photoshoot Makeup by Rajani">
+        </div>
+        <div class="feat-info"><span class="feat-cat">Photoshoot</span><h3>Photoshoot Makeup</h3></div>
+      </div>
+      <div class="feat-card">
+        <div class="img-frame">
+          <img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/Cover.PNG" alt="Engagement Look by Rajani">
+        </div>
+        <div class="feat-info"><span class="feat-cat">Engagement</span><h3>Engagement Look</h3></div>
+      </div>
+      <div class="feat-card">
+        <div class="img-frame">
+          <img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/hairtstyling.JPG" alt="Hair Styling by Rajani">
+        </div>
+        <div class="feat-info"><span class="feat-cat">Hair Styling</span><h3>Elegant Hair Style</h3></div>
+      </div>
+    </div>
+    <div class="center-btn"><a href="portfolio.html" class="btn-primary">View Full Portfolio</a></div>
+  </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="services-prev section dark-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="label">What I Offer</p>
+      <h2 style="color:var(--white);">Services</h2>
+      <p style="color:rgba(245,240,232,.42);max-width:480px;margin:.8rem auto 0;font-size:.88rem;">Every service is fully customized to your face, skin, outfit, and occasion</p>
+    </div>
+    <div class="services-grid">
+      <a href="services.html#bridal" class="srv-card">
+        <div class="srv-icon">💍</div>
+        <h3>Bridal Makeup</h3>
+        <p>Flawless, long-lasting bridal looks tailored to your skin tone, outfit, and style</p>
+      </a>
+      <a href="services.html#engagement" class="srv-card">
+        <div class="srv-icon">💫</div>
+        <h3>Engagement Makeup</h3>
+        <p>Radiant, camera-ready looks designed to photograph beautifully</p>
+      </a>
+      <a href="services.html#party" class="srv-card">
+        <div class="srv-icon">✨</div>
+        <h3>Party Glam</h3>
+        <p>Bold and beautiful glam looks for parties, celebrations, and events</p>
+      </a>
+      <a href="services.html#photoshoot" class="srv-card">
+        <div class="srv-icon">📸</div>
+        <h3>Photoshoot Makeup</h3>
+        <p>HD-finish makeup that looks perfect in front of the camera</p>
+      </a>
+      <a href="services.html#hair" class="srv-card">
+        <div class="srv-icon">✂️</div>
+        <h3>Hair Styling</h3>
+        <p>Elegant updos, braids, waves, and professional styling for all occasions</p>
+      </a>
+      <a href="services.html#natural" class="srv-card">
+        <div class="srv-icon">🌿</div>
+        <h3>Natural Look</h3>
+        <p>Soft, glowing makeup that enhances your features without masking them</p>
+      </a>
+    </div>
+    <div class="center-btn"><a href="services.html" class="btn-gold">All Services & Details</a></div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE RAJANI -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="label">Why Choose Rajani</p>
+      <h2>What Makes the<br><em>Difference</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">🎨</div>
+        <div>
+          <h4>Personalized Every Time</h4>
+          <p>No two clients are the same. Every look is tailored to your unique face shape, skin tone, outfit, and the energy of the occasion. Rajani takes time to truly understand what you want.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">✦</div>
+        <div>
+          <h4>Premium Products Only</h4>
+          <p>Only professional, skin-safe, and long-lasting products are used. Hygiene is a top priority — all brushes and tools are thoroughly sanitized between clients.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">📍</div>
+        <div>
+          <h4>I Come to You</h4>
+          <p>No need to travel on your big day. On-location services available across Kathmandu Valley — at your home, hotel, or event venue, so you can relax in comfort.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">💬</div>
+        <div>
+          <h4>Easy Booking Process</h4>
+          <p>Book instantly via WhatsApp, Instagram DM, or the contact form. Quick responses, clear pricing, and a stress-free experience from your first message to your final look.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">⏱</div>
+        <div>
+          <h4>Long-Lasting Results</h4>
+          <p>Rajani uses techniques and products specifically chosen for durability — so your look stays perfect from the ceremony to the last dance, photo to photo.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🌟</div>
+        <div>
+          <h4>Passion-Driven Work</h4>
+          <p>This isn't just a job — it's a calling. Every client gets Rajani's full attention, creativity, and care. She's not done until you feel absolutely confident and beautiful.</p>
+        </div>
       </div>
     </div>
   </div>
-</footer>
+</section>
 
-<script src="script.js"></script>
+<!-- NATURAL LOOK SPLIT -->
+<section class="section dark-section">
+  <div class="container split rev">
+    <div class="intro-img-wrap">
+      <div class="img-fixed">
+        <img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/WhatsApp%20Image%202024-12-20%20at%2010.36.40.jpeg" alt="Natural Look by Rajani Shrestha">
+      </div>
+    </div>
+    <div class="intro-text">
+      <p class="label">The Philosophy</p>
+      <h2 style="color:var(--white);">Beauty That<br><em>Feels Like You</em></h2>
+      <p style="color:rgba(245,240,232,.6);">Great makeup should never look like you're wearing a mask. My approach is always skin-first — understanding your complexion, correcting what needs to be corrected, and enhancing what makes you uniquely beautiful.</p>
+      <p style="color:rgba(245,240,232,.6);">Whether you want a bold, dramatic transformation or a whisper-light natural glow, I focus on clean, long-lasting finishes using quality products so you look flawless and feel comfortable all day and night.</p>
+      <a href="about.html" class="btn-gold" style="margin-top:1.5rem;display:inline-block;">Read More About Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="label">Kind Words</p>
+      <h2>Client Stories</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Rajani made me feel so confident on my wedding day. She listened to exactly what I wanted and delivered even more. My makeup lasted the entire day without a touch-up needed!"</p>
+        <div class="ta"><div class="ta-av">P</div><div><strong>Priya M.</strong><span>Bridal Client, Kathmandu</span></div></div>
+      </div>
+      <div class="testi-card ft">
+        <div class="stars">★★★★★</div>
+        <p>"I've had my makeup done by many artists but Rajani truly understands skin. She transformed me for our photoshoot and every single shot looked absolutely stunning."</p>
+        <div class="ta"><div class="ta-av">S</div><div><strong>Sujata K.</strong><span>Photoshoot Client</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Booked Rajani for my sister's engagement and she was amazing — professional, punctual, and incredibly talented. We all looked beautiful and felt so comfortable throughout."</p>
+        <div class="ta"><div class="ta-av">A</div><div><strong>Anisha T.</strong><span>Engagement Party</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS SECTION -->
+<section class="section dark-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="label">How It Works</p>
+      <h2 style="color:var(--white);">The Process</h2>
+      <p style="color:rgba(245,240,232,.42);max-width:450px;margin:.8rem auto 0;font-size:.88rem;">From your first message to your final look — here's what to expect</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <span class="step-num">01</span>
+        <h4>Contact</h4>
+        <p>Reach out via WhatsApp, Instagram, or the booking form with your date & details</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">02</span>
+        <h4>Consultation</h4>
+        <p>We discuss your vision, skin, outfit, and occasion in detail</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">03</span>
+        <h4>Confirmation</h4>
+        <p>Date is locked in and details finalized once booking is confirmed</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">04</span>
+        <h4>The Session</h4>
+        <p>Relaxed, professional application — at your location or studio</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">05</span>
+        <h4>Final Look ✦</h4>
+        <p>You walk out confident, camera-ready, and absolutely glowing</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="label">Common Questions</p>
+      <h2>FAQs</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-q"><h4>Do you offer on-location services?</h4><span class="faq-arrow">+</span></div>
+        <div class="faq-a"><p>Yes! I travel to your home, hotel, or event venue across Kathmandu Valley. For destinations outside Kathmandu, travel fees may apply. Just mention your location when booking.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h4>How far in advance should I book for bridal makeup?</h4><span class="faq-arrow">+</span></div>
+        <div class="faq-a"><p>I recommend booking bridal appointments as early as possible, especially during wedding season (October–December and February–May). Popular dates fill up quickly, so reaching out 2–6 months in advance is ideal.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h4>Do you do a trial session before the wedding?</h4><span class="faq-arrow">+</span></div>
+        <div class="faq-a"><p>Yes, a trial session is highly recommended for brides and is available as an add-on. The trial lets us perfect your look, test products on your skin, and make sure you're 100% happy before the big day.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h4>What products do you use? Are they safe for sensitive skin?</h4><span class="faq-arrow">+</span></div>
+        <div class="faq-a"><p>I use professional-grade, hygienic products. If you have sensitive skin, allergies, or any skin conditions, please mention it during consultation so I can choose the safest products for you.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h4>Can you do makeup for the whole bridal party?</h4><span class="faq-arrow">+</span></div>
+        <div class="faq-a"><p>Absolutely! I can take care of the bride, bridesmaids, mothers, and family members. For larger groups, we'll create a schedule to ensure everyone is ready on time. Get in touch for group rates.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h4>How do I book and confirm an appointment?</h4><span class="faq-arrow">+</span></div>
+        <div class="faq-a"><p>The easiest way is to message on WhatsApp at +977 9840141090. You can also DM on Instagram or fill out the contact form. Once we discuss your needs, I'll confirm your appointment and share all details.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="cta-bg">
+    <img src="https://raw.githubusercontent.com/Makeupwithrajani/Rajani/refs/heads/main/bridal-makeup-soft-pink-glam-rajani.jpg.png" alt="Book Rajani Makeup Artist Kathmandu">
+  </div>
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <p class="label">Ready to Look Your Best?</p>
+    <h2 style="color:var(--white);">Book Your<br><em>Appointment Today</em></h2>
+    <p style="color:rgba(245,240,232,.6);margin-bottom:2rem;max-width:400px;margin-left:auto;margin-right:auto;">Message on WhatsApp for the fastest response — I'd love to work with you!</p>
+    <a href="https://wa.me/9779840141090?text=Hi%20Rajani%2C%20I%20want%20to%20book%20makeup%20%2F%20hair.%20My%20date%20is%20____%20and%20location%20is%20____." target="_blank" class="btn-gold">📱 Book on WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo">MAKEUP WITH RAJANI</span>
+      <p>Bridal · Party · Photoshoot · Hair<br>Kathmandu, Nepal</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/makeupandhairwithrajani/" target="_blank" aria-label="Instagram">IG</a>
+        <a href="https://www.tiktok.com/@stharazni" target="_blank" aria-label="TikTok">TK</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h4>Navigation</h4>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact & Booking</a>
+    </div>
+    <div class="footer-nav">
+      <h4>Services</h4>
+      <a href="services.html#bridal">Bridal Makeup</a>
+      <a href="services.html#engagement">Engagement</a>
+      <a href="services.html#party">Party Glam</a>
+      <a href="services.html#photoshoot">Photoshoot</a>
+      <a href="services.html#hair">Hair Styling</a>
+      <a href="services.html#natural">Natural Look</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Get In Touch</h4>
+      <p>Kathmandu, Nepal</p>
+      <p><a href="https://wa.me/9779840141090" target="_blank" style="color:var(--gold);">WhatsApp: +977 9840141090</a></p>
+      <p><a href="https://www.instagram.com/makeupandhairwithrajani/" target="_blank" style="color:var(--gold-dark);">@makeupandhairwithrajani</a></p>
+      <p><a href="https://www.tiktok.com/@stharazni" target="_blank" style="color:var(--gold-dark);">TikTok: @stharazni</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Makeup & Hair With Rajani · Kathmandu, Nepal · All rights reserved</p></div>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>
